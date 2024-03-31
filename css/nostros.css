@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    
+    
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    
+}
+.contaner{
+    max-width: 1440px;
+    padding: 0 50px;
+}
+
+/*navbar estilo*/
+nav{
+    height: 100px;
+    max-width: 1500px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #05000b; 
+    
+}
+/*logo del inicio*/
+.logo{
+    width: 20%;
+    margin-left: 20px;
+}
+
+
+.bar-btn{
+    font-size: 25px;
+    color:#fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    top: 100px;
+    background:rgba(0, 4, 41, 0.868);
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 1;
+
+}
+
+.nav-menu li{
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all 0.5s;
+}
+
+.nav-menu li a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-menu li a.active,
+.nav-menu li a:hover{
+    color: #9900ff;
+    transition: 0.3s;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .nav-menu li{
+    display: block;
+}
+
+.banner-text {
+    padding-top: 10px;
+    text-align: center;
+    
+}
+
+.banner-text h1{
+    color:#fff;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.banner-text p{
+    color:#fff;
+    font-size: 18px;
+    padding: 30px;
+}
+
+.btn-a{
+    display: inline-block;
+    background-color: #9900ff;
+    margin-top: 30px;
+    padding: 15px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 25px;
+    
+}
+
+.btn-a:hover{
+    background-color: #6305c9;
+   
+}
+
+@media (min-width:768px) {
+    .logo {
+        margin-left: 0;
+    }
+
+    header {
+        height: 100vh;
+    }
+
+    nav {
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    .bar-btn {
+        display: none;
+    }
+
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top:0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .nav-menu li a{
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    
+}
+/*navbar estilo*/
+
+/*seccion de nosotros*/
+
+.nosotros {
+    padding-bottom: 75px;
+    padding-top: 75px;
+    background:linear-gradient(to right, rgba(93, 2, 109, 0.981), #010150f0);
+}
+.nosotros img{
+    width: 500px;
+    border-radius: 20%;
+    margin: 30px;
+    border: solid rgb(221, 25, 243);
+}
+.nosotros .presentacion{
+    text-align:left;
+    margin: 20px;
+}
+.nosotros .row{
+    display: flex;
+    align-items: center;
+}
+.nosotros h1 {
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+
+}
+.nosotros p {
+    font-family: "Oxanium", sans-serif;
+}
+@media (max-width: 900px) {
+    .nosotros {
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+    .nosotros img{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .nosotros .presentacion{
+        text-align: center;
+    }
+}
+
+/*logo del final*/
+.logotipo{
+    width: 50%;
+    margin-left: 130px;
+}
+/* estilo del footer*/
+#footer {
+    padding-top: 30px;
+    background: #000000;
+}
+.concts{
+    display: flex;
+    gap: 20px;
+    margin-left: 200px;
+}
+
+/*.concts> a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: #ae40f8;
+    text-align: center;
+    transition: 1s;
+}*/
+/*estilo de los iconos del footer*/
+i.bi.bi-envelope {
+    color: rgb(236, 13, 13)
+}
+i.bi.bi-whatsapp{
+    color: #06f646  
+}
+i.fa-brands.fa-linkedin{
+    color: #fff
+}
+@media (max-width:500px) {
+    .concts {
+        display:grid;
+}
+}
+.concts > a > i {
+    color: #fff;
+    line-height: 40px;
+    font-size: 20px;
+}
+/*estilos de los iconos de las redes sociales */
+i.fa-brands.fa-github.fa-2xl,
+i.fa-brands.fa-facebook.fa-2xl,
+i.fa-brands.fa-linkedin.fa-2xl,
+i.fa-brands.fa-instagram.fa-2xl,
+i.fa-solid.fa-user-lock.fa-2xl,
+i.fa-solid.fa-house-chimney-user.fa-2xl{
+    color: #fff  
+}
+i.fa-brands.fa-github.fa-2xl:hover{
+    color: dimgrey
+}
+i.fa-brands.fa-facebook.fa-2xl:hover{
+    color: #0636F6  
+}
+i.fa-brands.fa-linkedin.fa-2xl:hover{
+    color: #14DBF7
+}
+i.fa-brands.fa-instagram.fa-2xl:hover{
+    color: #F4106D
+}
+i.fa-solid.fa-user-lock.fa-2xl:hover{
+    color: #c233f2
+}
+i.fa-solid.fa-house-chimney-user.fa-2xl:hover{
+    color:#cd16ee
+}
+
+.list-group-item{
+    --bs-list-group-bg: transparent;
+    --bs-list-group-border-color: transparent;
+}
+.nav-link.p-0.text-white{
+    font-family: "Oxanium", sans-serif;
+
+}
+
+.service .service-icon {
+    font-size: 24px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    position: relative;
+    color: #ffffff; }
+    .service .service-icon.color-1 {
+      background-color: #6fe7dd;
+      -webkit-box-shadow: 0 2px 10px 0 rgba(111, 231, 221, 0.3);
+      box-shadow: 0 2px 10px 0 rgba(111, 231, 221, 0.3); }
+    .service .service-icon.color-2 {
+      background-color: #ffc93c;
+      -webkit-box-shadow: 0 2px 10px 0 rgba(255, 201, 60, 0.3);
+      box-shadow: 0 2px 10px 0 rgba(255, 201, 60, 0.3); }
+    .service .service-icon.color-3 {
+      background-color: #f73859;
+      -webkit-box-shadow: 0 2px 10px 0 rgba(247, 56, 89, 0.3);
+      box-shadow: 0 2px 10px 0 rgba(247, 56, 89, 0.3); }
+    .service .service-icon.color-4 {
+      background-color: #107BE9;
+      -webkit-box-shadow: 0 2px 10px 0 rgba(16, 123, 233, 0.3);
+      box-shadow: 0 2px 10px 0 rgba(16, 123, 233, 0.3); }
+    .service .service-icon > i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  
+  .service .service-contents h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color:#14DBF7;
+}
+  
+  .service.horizontal .service-icon {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50px;
+    flex: 0 0 40px;
+    margin-right: 30px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px; }
