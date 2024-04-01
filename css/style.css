@@ -18,14 +18,21 @@ body{
 /*video de fondo*/  
 video.video {
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 0;
+    left: 0;
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
+    object-fit: cover;
     transform: translateX(-50%) translateY(-50%);
-    z-index: -5;
+    z-index: -1;
+}
+
+@media (max-width: 800px){
+    .box{
+        min-heigth: 600px;
+    }
 }
 
 .container{
